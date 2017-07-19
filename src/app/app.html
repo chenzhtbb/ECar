@@ -1,0 +1,28 @@
+<ion-menu [content]="content">
+  <ion-header>
+      <ion-title>ECar</ion-title>
+    <ion-row>
+      
+    </ion-row>
+  </ion-header>
+
+  <ion-content>
+    <div style="text-align: center;">
+        <img 
+      style="
+      max-width: 100px;
+      max-height: 100px;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border-style:solid solid solid solid;
+      border-width:1px 1px 1px 1px;" 
+      src="http://img02.fs.yiban.cn/5720091/avatar/user/200">
+    </div>
+    <button *ngFor="let button of buttons" ion-button full outline (click)="openPage(button)">{{button.name}}</button>
+    <div></div>
+    
+
+  </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
