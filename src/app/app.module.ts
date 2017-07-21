@@ -9,6 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { HeaderPage } from '../pages/header/header';
 import { MapPage } from '../pages/map/map';
 import { JourneyPage } from '../pages/journey/journey';
+import { SiteSearchPage } from '../pages/site-search/site-search';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     HeaderPage,
     MapPage,
-    JourneyPage
+    JourneyPage,
+    SiteSearchPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     HeaderPage,
     MapPage,
-    JourneyPage
+    JourneyPage,
+    SiteSearchPage
   ],
   providers: [
     StatusBar,
